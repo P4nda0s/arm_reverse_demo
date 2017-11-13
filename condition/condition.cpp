@@ -22,9 +22,9 @@ int main()
     {
         if(a <= 20)
         {
-            printf("[nest if]");
+            printf("[nest if]\n");
         }
-        printf("a > 10");
+        printf("a > 10\n");
     }    
     return 0;
 }

@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE    :=function
 LOCAL_SRC_FILES := ../function.cpp
-LOCAL_CFLAGS := -g
+LOCAL_CFLAGS := -g -O2
 LOCAL_SHARED_LIBRARIES := dl
 include $(BUILD_EXECUTABLE)
 
