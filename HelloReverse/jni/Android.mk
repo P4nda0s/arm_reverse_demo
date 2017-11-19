@@ -18,7 +18,8 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE    :=HelloRe
 LOCAL_SRC_FILES := ../HelloRe.cpp
-LOCAL_CFLAGS := -g
+LOCAL_CFLAGS := -g -pie -fPIE -O0
+LOCAL_LDFLAGS := -pie -fPIE
 LOCAL_SHARED_LIBRARIES := dl
 include $(BUILD_EXECUTABLE)
 

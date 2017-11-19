@@ -18,7 +18,8 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE    :=expression
 LOCAL_SRC_FILES := ../expression.cpp
-LOCAL_CFLAGS := -g -O0
+LOCAL_CFLAGS := -g -pie -fPIE -O0
+LOCAL_LDFLAGS := -pie -fPIE
 LOCAL_SHARED_LIBRARIES := dl
 include $(BUILD_EXECUTABLE)
 
