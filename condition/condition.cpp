@@ -7,7 +7,7 @@ int main()
     scanf("%d%d",&a,&b);
     if(a + b == 10)
     {
-        printf("[if]a+b=10\b");
+        printf("[if]a+b=10\n");
     }
 
     if(a > b){
